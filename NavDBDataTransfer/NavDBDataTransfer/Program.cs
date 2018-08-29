@@ -11,6 +11,7 @@ namespace NavDBDataTransfer
         static void Main(string[] args)
         {
             System.Diagnostics.Debug.WriteLine("Start Main ... ");
+            System.Diagnostics.Debug.WriteLine("Test Second COmmit to GitHub ... ");
         }
     }
 }
