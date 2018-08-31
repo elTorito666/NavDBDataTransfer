@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="NAV_FIELDS_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Während der Generierung sind Fehler aufgetreten:
+Warnung 6002: Für Tabelle/Sicht 'NAV_FIELDS_DB.dbo.NavFields09vs18' ist kein Primärschlüssel definiert. Der Schlüssel wurde abgeleitet, und die Definition wurde als schreibgeschützte Tabelle/Sicht erstellt.-->
+        <EntityType Name="NavFields09vs18">
+          <Key>
+            <PropertyRef Name="TableNo" />
+            <PropertyRef Name="FieldNo" />
+          </Key>
+          <Property Name="TableNo" Type="int" Nullable="false" />
+          <Property Name="TableName2009" Type="nvarchar" MaxLength="255" />
+          <Property Name="FieldName2009" Type="nvarchar" MaxLength="255" />
+          <Property Name="FieldNo" Type="int" Nullable="false" />
+          <Property Name="FieldName2018" Type="nvarchar" MaxLength="255" />
+          <Property Name="FieldNeededIn2018" Type="int" />
+          <Property Name="TableName2018" Type="nvarchar" MaxLength="255" />
+          <Property Name="TableDeletedIn2018" Type="int" />
+          <Property Name="TableChangedNameIn2018" Type="int" />
+          <Property Name="FieldName2009ChangedIn2018" Type="int" />
+          <Property Name="Type2018" Type="nvarchar" MaxLength="255" />
+          <Property Name="Class2018" Type="nvarchar" MaxLength="255" />
+          <Property Name="Enabled2018" Type="nvarchar" MaxLength="255" />
+          <Property Name="Type2009" Type="nvarchar" MaxLength="255" />
+          <Property Name="Class2009" Type="nvarchar" MaxLength="255" />
+          <Property Name="Length2009" Type="int" />
+          <Property Name="Length2018" Type="int" />
+          <Property Name="FieldNameLengthChanged" Type="int" />
+          <Property Name="FieldTypeChanged" Type="int" />
+        </EntityType>
+        <EntityContainer Name="NAV_FIELDS_DBModelStoreContainer">
+          <EntitySet Name="NavFields09vs18" EntityType="Self.NavFields09vs18" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [NavFields09vs18].[TableNo] AS [TableNo], 
+    [NavFields09vs18].[TableName2009] AS [TableName2009], 
+    [NavFields09vs18].[FieldName2009] AS [FieldName2009], 
+    [NavFields09vs18].[FieldNo] AS [FieldNo], 
+    [NavFields09vs18].[FieldName2018] AS [FieldName2018], 
+    [NavFields09vs18].[FieldNeededIn2018] AS [FieldNeededIn2018], 
+    [NavFields09vs18].[TableName2018] AS [TableName2018], 
+    [NavFields09vs18].[TableDeletedIn2018] AS [TableDeletedIn2018], 
+    [NavFields09vs18].[TableChangedNameIn2018] AS [TableChangedNameIn2018], 
+    [NavFields09vs18].[FieldName2009ChangedIn2018] AS [FieldName2009ChangedIn2018], 
+    [NavFields09vs18].[Type2018] AS [Type2018], 
+    [NavFields09vs18].[Class2018] AS [Class2018], 
+    [NavFields09vs18].[Enabled2018] AS [Enabled2018], 
+    [NavFields09vs18].[Type2009] AS [Type2009], 
+    [NavFields09vs18].[Class2009] AS [Class2009], 
+    [NavFields09vs18].[Length2009] AS [Length2009], 
+    [NavFields09vs18].[Length2018] AS [Length2018], 
+    [NavFields09vs18].[FieldNameLengthChanged] AS [FieldNameLengthChanged], 
+    [NavFields09vs18].[FieldTypeChanged] AS [FieldTypeChanged]
+    FROM [dbo].[NavFields09vs18] AS [NavFields09vs18]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NAV_FIELDS_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="NavFields09vs18">
+          <Key>
+            <PropertyRef Name="TableNo" />
+            <PropertyRef Name="FieldNo" />
+          </Key>
+          <Property Name="TableNo" Type="Int32" Nullable="false" />
+          <Property Name="TableName2009" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FieldName2009" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FieldNo" Type="Int32" Nullable="false" />
+          <Property Name="FieldName2018" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FieldNeededIn2018" Type="Int32" />
+          <Property Name="TableName2018" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="TableDeletedIn2018" Type="Int32" />
+          <Property Name="TableChangedNameIn2018" Type="Int32" />
+          <Property Name="FieldName2009ChangedIn2018" Type="Int32" />
+          <Property Name="Type2018" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Class2018" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Enabled2018" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Type2009" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Class2009" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Length2009" Type="Int32" />
+          <Property Name="Length2018" Type="Int32" />
+          <Property Name="FieldNameLengthChanged" Type="Int32" />
+          <Property Name="FieldTypeChanged" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="NAV_FIELDS_DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="NavFields09vs18" EntityType="Self.NavFields09vs18" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NAV_FIELDS_DBModelStoreContainer" CdmEntityContainer="NAV_FIELDS_DBEntities">
+          <EntitySetMapping Name="NavFields09vs18">
+            <EntityTypeMapping TypeName="NAV_FIELDS_DBModel.NavFields09vs18">
+              <MappingFragment StoreEntitySet="NavFields09vs18">
+                <ScalarProperty Name="TableNo" ColumnName="TableNo" />
+                <ScalarProperty Name="TableName2009" ColumnName="TableName2009" />
+                <ScalarProperty Name="FieldName2009" ColumnName="FieldName2009" />
+                <ScalarProperty Name="FieldNo" ColumnName="FieldNo" />
+                <ScalarProperty Name="FieldName2018" ColumnName="FieldName2018" />
+                <ScalarProperty Name="FieldNeededIn2018" ColumnName="FieldNeededIn2018" />
+                <ScalarProperty Name="TableName2018" ColumnName="TableName2018" />
+                <ScalarProperty Name="TableDeletedIn2018" ColumnName="TableDeletedIn2018" />
+                <ScalarProperty Name="TableChangedNameIn2018" ColumnName="TableChangedNameIn2018" />
+                <ScalarProperty Name="FieldName2009ChangedIn2018" ColumnName="FieldName2009ChangedIn2018" />
+                <ScalarProperty Name="Type2018" ColumnName="Type2018" />
+                <ScalarProperty Name="Class2018" ColumnName="Class2018" />
+                <ScalarProperty Name="Enabled2018" ColumnName="Enabled2018" />
+                <ScalarProperty Name="Type2009" ColumnName="Type2009" />
+                <ScalarProperty Name="Class2009" ColumnName="Class2009" />
+                <ScalarProperty Name="Length2009" ColumnName="Length2009" />
+                <ScalarProperty Name="Length2018" ColumnName="Length2018" />
+                <ScalarProperty Name="FieldNameLengthChanged" ColumnName="FieldNameLengthChanged" />
+                <ScalarProperty Name="FieldTypeChanged" ColumnName="FieldTypeChanged" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Kein" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
